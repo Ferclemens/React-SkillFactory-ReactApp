@@ -1,0 +1,30 @@
+.App {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerTukiComponents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TukiChild {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+.button {
+    margin: 20px;
+    padding: 5px 10px;
+    border: solid 1px rgb(36, 35, 35);
+    background-color: rgb(214, 214, 78);
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: rgb(165, 141, 76);
+}
