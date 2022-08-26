@@ -30,12 +30,12 @@ const TukiChild = () => {
     const changeLoading = () => {
         setLoading(!loading)
     }
-// ### consola: un array de 2 elementos, [Raccoon,['Carpincho','Yacaré','Tatú','Yaguareté','Guazuncho']] ###
+// ### consola: un array de 2 elementos, ['Raccoon',['Carpincho','Yacaré','Tatú','Yaguareté','Guazuncho']] ###
 /*     const addAnimals = () => {
         setAnimals([...animals, animalsArray])
     } */
 
-// ### consola: un array de 2 elementos, [Raccoon,['Carpincho','Yacaré','Tatú','Yaguareté','Guazuncho']] ###
+// ### consola: un array de 6 elementos, ['Raccoon','Carpincho','Yacaré','Tatú','Yaguareté','Guazuncho'] ###
     const addAnimals = () => {
         setAnimals(animals.concat(animalsArray))
     }
