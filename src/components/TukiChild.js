@@ -12,7 +12,16 @@ const TukiChild = () => {
         name: 'Fer',
         age: 32,
     })
-
+<<<<<<< HEAD
+=======
+    
+    const increase = () => {
+        setCount(count + 1)
+    }
+    const decrease = () => {
+        setCount(count -1)
+    }
+>>>>>>> 8c140087e1f419ab9a0ff1ba11a15ffabd34b624
     const changeInfo = () => {
         setInfo({
             ...info,
@@ -28,7 +37,10 @@ const TukiChild = () => {
         setAnimals([...animals, animalsArray])
     } */
 
+<<<<<<< HEAD
 // ### consola: un array de 6 elementos, ['Raccoon','Carpincho','Yacaré','Tatú','Yaguareté','Guazuncho'] ###
+=======
+>>>>>>> 8c140087e1f419ab9a0ff1ba11a15ffabd34b624
     const addAnimals = () => {
         //setAnimals(animals.concat(animalsArray))
         setAnimals([...animals,...animalsArray])
