@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 .containerTukiComponents {
     display: flex;
@@ -55,5 +56,21 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
     width: 69vw;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+.buttonsContainer {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.img {
+    width: 100px;
+    height: auto;
 }
