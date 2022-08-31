@@ -3,16 +3,18 @@
 // Abajo del componente, van los EXPORTS
 import ProductList from './components/ProductList'
 import NavBar from "./components/NavBar";
+import Button from './components/Button';
+import { useState } from 'react';
 
 const App = () => {
-    // Logica del componente
-    //console.log("App");
-
-    // Renderizar el componente
+    const [list, setList] = useState(false)
+    const showProducts = () => {
+        setList(!list)
+    }
     return (
         <div className="App">
             <NavBar nameEcommerce={'Carrefourcito'}/>
-            <ProductList />
+            { list ? <ProductList/> : <Button name={'Show Products'} accion={showProducts}/>}
         </div>
     );
 };
