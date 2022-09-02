@@ -1,21 +1,20 @@
 // Arriba del componente, van los IMPORTS
 // En el medio, declaramos el componente funcional con lo que debe renderizar y la lógica que tenga
 // Abajo del componente, van los EXPORTS
-import ProductList from './components/ProductList'
-import NavBar from "./components/NavBar";
-import Button from './components/Button';
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart";
+import ErrorNotFound from "./components/ErrorNotFound";
+import Landing from "./components/Landing";
 
 const App = () => {
-    const [list, setList] = useState(false)
-    const showProducts = () => {
-        setList(!list)
-    }
     return (
-        <div className="App">
-            <NavBar nameEcommerce={'Carrefourcito'}/>
-            { list ? <ProductList/> : <Button name={'Show Products'} accion={showProducts}/>}
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Landing />}/>
+                <Route path="/cart" element={<Cart />}/>
+                <Route path="*" element={<ErrorNotFound />}/>
+            </Routes>
+        </BrowserRouter>
     );
 };
 
